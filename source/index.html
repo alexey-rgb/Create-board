@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<h lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main">
+      <button class="main__button-beginning button" onmouseenter="mouselog(event)">
+        Create a new board...
+      </button>
+<div class="main__board-maker board-maker visually-hidden">
+  <div class="board-maker__title-button-wrapper">
+  <h2 class="board-maker__title">
+    <span>
+      Creating а board
+    </span>
+  </h2>
+  <button id="board-maker__close" type="button" class="board-maker__close"></button>
+</div>
+<p class="board-maker__question">
+  What shall we call the board?
+</p>
+<label for="board-name">
+</label>
+<input class="board-maker__call-new-board" id="board-name" type="text">
+<div class="board-maker__buttons-wrapper">
+<button id="board-maker__close" class="board-maker__remove">
+  cancel
+</button>
+<button id="board-maker__starter" class="board-maker__starter">
+  create
+</button>
+</div>
+</div>
+</main>
+<template id="new-board-template">
+  <button id="current-board-button-preview" class="button button--preview-current-board">
+  </button>
+</template>
+<script src="js/index.js">
+</script>
+</body>
+</html>
